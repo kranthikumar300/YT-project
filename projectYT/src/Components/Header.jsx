@@ -1,6 +1,9 @@
 import {useDispatch} from "react-redux";
 import { toggleMenu } from "../assets/Store/SlideSlice";
 import {Link} from "react-router-dom";
+import SearchBar from "./SearchBar";
+
+
 const Header = () => {
 
     const dispatch = useDispatch()
@@ -20,14 +23,13 @@ const Header = () => {
                 </svg>
             </div>
 
-            <div className="sm:col-span-8 flex justify-center">
+            <div className="sm:col-span-8 flex justify-center gap-4">
              <Link to = "/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-12 cursor-pointer transform hover:scale-110 hover:fill-purple-500 transition-all duration-200 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-10 mt-1 cursor-pointer transform hover:scale-110 hover:fill-purple-500 transition-all duration-200 ease-in-out">
                  <path fillRule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clipRule="evenodd" />
                 </svg>
              </Link>
-
-                
+              <SearchBar/>
             </div>
 
             <div className="sm:col-span-2 flex justify-end">

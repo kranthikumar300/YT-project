@@ -10,7 +10,7 @@ const SlideBar = () => {
         <AnimatePresence>
         { isMenuOpen && <motion.div
         initial = {{x : -50, opacity : 0}}
-        transition={{type : "tween", duration : 0.3}}
+        transition={{type : "spring", duration : 0.3}}
         animate = {{x : 0, opacity : 1}}
         exit={{x : -50,  opacity : 0}}
          className="shadow-xl rounded-xl mx-4">
