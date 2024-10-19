@@ -18,6 +18,7 @@ const ContentBody = () => {
       setVideos(jsonData.items);
     }
     return(
+      
         <div>
             <div className="absolute mt-1 left-[39rem] flex items-stretch">
             <input type="search" placeholder="search" className=" tracking-wider w-[30rem] font-semibold outline-none border border-gray-400 py-2 px-4 rounded-l-full"/>
@@ -29,7 +30,8 @@ const ContentBody = () => {
             </button>
          </div>
 
-         <div className="flex flex-wrap justify-evenly ml-5 mt-14">
+         <div 
+          className="flex flex-wrap justify-evenly ml-5 mt-14">
             {
               videos.map((video) => 
                 <Link key={video.id} to={"/watchPage?v=" + video.id}>
@@ -40,6 +42,7 @@ const ContentBody = () => {
          
             
         </div>
+        
     )
 }
 

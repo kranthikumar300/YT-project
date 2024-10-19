@@ -5,6 +5,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import WatchPage from "./Components/WatchPage";
 import ContentBody from "./Components/ContentBody";
 
+
 const route = createBrowserRouter([
   {
     path : "/",
@@ -24,11 +25,13 @@ const route = createBrowserRouter([
 ]);
 
 function App() {
+
+  
   
 
   return (
     <Provider store={AppStore}>
-      <RouterProvider router={route}/>
+       <RouterProvider router={route}/>
     </Provider>
   )
 }
